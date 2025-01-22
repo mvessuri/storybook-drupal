@@ -1,0 +1,7 @@
+storybook_content.demo_page:
+  path: '/demo-components'
+  defaults:
+    _controller: '\Drupal\storybook_content\Controller\DemoPageController::demoPage'
+    _title: 'Theme Components Demo'
+  requirements:
+    _permission: 'access content'

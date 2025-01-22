@@ -1,0 +1,57 @@
+{% stories card with {
+  title: 'Components/Card',
+    tags: ['autodocs']
+   } %}
+
+  {% story default with {
+    name: 'Card',
+    args: {
+      card_header: 'Card Header',
+      card_body: 'This is the body of the card.',
+      card_footer: 'Card Footer',
+      card_image_src: 'https://picsum.photos/id/1018/1500/500',
+      card_image_alt: 'Card Image Alt Text',
+      card_link_url: 'https://example.com',
+      card_link_text: 'Read More',
+      card_border: true,
+      card_link_utility_classes: ['btn', 'btn-primary']
+    }
+  } %}
+    {% include 'radix:card' %}
+  {% endstory %}
+
+  {% story with_subtitle with {
+    name: 'Card with Subtitle',
+    args: {
+      card_header: 'Card Header',
+      card_subtitle: 'Card Subtitle',
+      card_body: 'This card has a subtitle.',
+      card_footer: 'Card Footer',
+      card_image_src: 'https://picsum.photos/id/1018/1500/500',
+      card_image_alt: 'Card Image Alt Text',
+      card_link_url: 'https://example.com',
+      card_link_text: 'Read More',
+      card_border: true,
+      card_link_utility_classes: ['btn', 'btn-primary']
+    }
+  } %}
+    {% include 'radix:card' %}
+  {% endstory %}
+
+  {% story no_image with {
+    name: 'Card without Image',
+    args: {
+      card_header: 'Card Header',
+      card_body: 'This card does not have an image.',
+      card_footer: 'Card Footer',
+      card_link_url: 'https://example.com',
+      card_link_text: 'Read More',
+      card_border: true,
+      card_link_utility_classes: ['btn', 'btn-primary']
+    }
+  } %}
+    {% include 'radix:card' %}
+  {% endstory %}
+
+
+{% endstories %}

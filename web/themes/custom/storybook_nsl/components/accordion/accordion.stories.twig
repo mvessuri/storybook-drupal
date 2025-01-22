@@ -1,0 +1,103 @@
+{% stories accordion with {
+  title: 'Components/Accordion',
+} %}
+
+  {% story default with {
+    name: 'Default Accordion',
+    args: {
+      title: 'Example Accordion',
+      title_tag: 'h2',
+      flush: false,
+      open_item_id: 1,
+      items: [
+        {
+          title: 'Item 1',
+          title_tag: 'h3',
+          content: 'This is the content for Item 1.',
+          stay_open: false
+        },
+        {
+          title: 'Item 2',
+          title_tag: 'h3',
+          content: 'This is the content for Item 2.',
+          stay_open: false
+        },
+        {
+          title: 'Item 3',
+          title_tag: 'h3',
+          content: 'This is the content for Item 3.',
+          stay_open: false
+        }
+      ]
+    }
+  } %}
+    {% include 'radix:accordion' %}
+  {% endstory %}
+
+  {% story flush with {
+    name: 'Flush Accordion',
+    args: {
+      title: 'Flush Accordion Example',
+      title_tag: 'h2',
+      flush: true,
+      open_item_id: 2,
+      items: [
+        {
+          title: 'Flush Item 1',
+          title_tag: 'h3',
+          content: 'This is the content for Flush Item 1.',
+          stay_open: false
+        },
+        {
+          title: 'Flush Item 2',
+          title_tag: 'h3',
+          content: 'This is the content for Flush Item 2.',
+          stay_open: false
+        },
+        {
+          title: 'Flush Item 3',
+          title_tag: 'h3',
+          content: 'This is the content for Flush Item 3.',
+          stay_open: false
+        }
+      ]
+    }
+  } %}
+    {% include 'radix:accordion' %}
+  {% endstory %}
+
+  {% story custom_classes with {
+    name: 'Accordion with Custom Classes',
+    args: {
+      title: 'Custom Classes Accordion',
+      title_tag: 'h2',
+      flush: false,
+      open_item_id: 3,
+      accordion_utility_classes: ['custom-accordion-class'],
+      accordion_item_utility_classes: ['custom-item-class'],
+      items: [
+        {
+          title: 'Custom Item 1',
+          title_tag: 'h3',
+          content: 'This is the content for Custom Item 1.',
+          stay_open: true
+        },
+        {
+          title: 'Custom Item 2',
+          title_tag: 'h3',
+          content: 'This is the content for Custom Item 2.',
+          stay_open: false
+        },
+        {
+          title: 'Custom Item 3',
+          title_tag: 'h3',
+          content: 'This is the content for Custom Item 3.',
+          stay_open: false
+        }
+      ]
+    }
+  } %}
+    {% include 'radix:accordion' %}
+  {% endstory %}
+
+{% endstories %}

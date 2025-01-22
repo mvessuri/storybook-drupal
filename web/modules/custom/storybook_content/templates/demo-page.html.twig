@@ -1,0 +1,161 @@
+{# demo-page.html.twig #}
+<div class="demo-page">
+
+  <section>
+    <h2>Buttons</h2>
+    {% include 'radix:button' with {
+      content: 'Primary Button',
+      color: 'primary',
+    } %}
+
+    <hr>
+
+    {% include 'radix:button' with {
+      content: 'Secondary Button',
+      color: 'secondary',
+    } %}
+
+    <hr>
+
+    {% include 'radix:button' with {
+      content: 'Large Button',
+      color: 'primary',
+      size: 'btn-lg',
+    } %}
+
+  </section>
+
+<section>
+  <h2>Cards</h2>
+
+  <h3>Default Card</h3>
+  {% include 'radix:card' with {
+    card_header: 'Card Header',
+    card_body: 'This is the body of the card.',
+    card_footer: 'Card Footer',
+    card_image_src: 'https://picsum.photos/id/1018/1500/500',
+    card_image_alt: 'Card Image Alt Text',
+    card_link_url: 'https://example.com',
+    card_link_text: 'Read More',
+    card_border: true,
+    card_link_utility_classes: ['btn', 'btn-primary']
+  } %}
+
+  <h3>Card with Subtitle</h3>
+  {% include 'radix:card' with {
+    card_header: 'Card Header',
+    card_subtitle: 'Card Subtitle',
+    card_body: 'This card has a subtitle.',
+    card_footer: 'Card Footer',
+    card_image_src: 'https://picsum.photos/id/1018/1500/500',
+    card_image_alt: 'Card Image Alt Text',
+    card_link_url: 'https://example.com',
+    card_link_text: 'Read More',
+    card_border: true,
+    card_link_utility_classes: ['btn', 'btn-primary']
+  } %}
+
+  <h3>Card without Image</h3>
+  {% include 'radix:card' with {
+    card_header: 'Card Header',
+    card_body: 'This card does not have an image.',
+    card_footer: 'Card Footer',
+    card_link_url: 'https://example.com',
+    card_link_text: 'Read More',
+    card_border: true,
+    card_link_utility_classes: ['btn', 'btn-primary']
+  } %}
+</section>
+
+
+<section>
+  <h2>Accordions</h2>
+
+  <h3>Default Accordion</h3>
+  {% include 'radix:accordion' with {
+    title: 'Example Accordion',
+    title_tag: 'h2',
+    flush: false,
+    open_item_id: 1,
+    items: [
+      {
+        title: 'Item 1',
+        title_tag: 'h3',
+        content: 'This is the content for Item 1.',
+        stay_open: false
+      },
+      {
+        title: 'Item 2',
+        title_tag: 'h3',
+        content: 'This is the content for Item 2.',
+        stay_open: false
+      },
+      {
+        title: 'Item 3',
+        title_tag: 'h3',
+        content: 'This is the content for Item 3.',
+        stay_open: false
+      }
+    ]
+  } %}
+
+  <h3>Flush Accordion</h3>
+  {% include 'radix:accordion' with {
+    title: 'Flush Accordion Example',
+    title_tag: 'h2',
+    flush: true,
+    open_item_id: 2,
+    items: [
+      {
+        title: 'Flush Item 1',
+        title_tag: 'h3',
+        content: 'This is the content for Flush Item 1.',
+        stay_open: false
+      },
+      {
+        title: 'Flush Item 2',
+        title_tag: 'h3',
+        content: 'This is the content for Flush Item 2.',
+        stay_open: false
+      },
+      {
+        title: 'Flush Item 3',
+        title_tag: 'h3',
+        content: 'This is the content for Flush Item 3.',
+        stay_open: false
+      }
+    ]
+  } %}
+
+  <h3>Accordion with Custom Classes</h3>
+  {% include 'radix:accordion' with {
+    title: 'Custom Classes Accordion',
+    title_tag: 'h2',
+    flush: false,
+    open_item_id: 3,
+    accordion_utility_classes: ['custom-accordion-class'],
+    accordion_item_utility_classes: ['custom-item-class'],
+    items: [
+      {
+        title: 'Custom Item 1',
+        title_tag: 'h3',
+        content: 'This is the content for Custom Item 1.',
+        stay_open: true
+      },
+      {
+        title: 'Custom Item 2',
+        title_tag: 'h3',
+        content: 'This is the content for Custom Item 2.',
+        stay_open: false
+      },
+      {
+        title: 'Custom Item 3',
+        title_tag: 'h3',
+        content: 'This is the content for Custom Item 3.',
+        stay_open: false
+      }
+    ]
+  } %}
+</section>
+
+</div>

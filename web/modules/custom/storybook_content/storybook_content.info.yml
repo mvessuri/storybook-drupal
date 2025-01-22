@@ -1,0 +1,5 @@
+name: 'storybook_content'
+type: module
+description: 'Content for Storybook demo'
+package: Custom
+core_version_requirement: ^10 || ^11

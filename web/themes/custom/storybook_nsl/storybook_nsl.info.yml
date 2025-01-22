@@ -1,0 +1,40 @@
+name: storybook_nsl
+description: ''
+screenshot: screenshot.png
+'alt text': 'storybook_nsl theme screenshot'
+core_version_requirement: ^11
+engine: twig
+type: theme
+'base theme': radix
+starterkit: true
+dependencies:
+  - 'drupal:serialization'
+'interface translation project': storybook_nsl
+'interface translation server pattern': themes/custom/storybook_nsl/translations/%language.po
+regions:
+  navbar_branding: 'Navbar branding'
+  navbar_left: 'Navbar left'
+  navbar_right: 'Navbar right'
+  header: Header
+  content: Content
+  page_bottom: 'Page bottom'
+  footer: Footer
+libraries:
+  - storybook_nsl/style
+ckeditor5-stylesheets:
+  - build/css/main.style.css
+libraries-extend:
+  core/drupal.ajax:
+    - storybook_nsl/drupal.ajax
+  core/drupal.checkbox:
+    - storybook_nsl/drupal.checkbox
+  core/drupal.message:
+    - storybook_nsl/drupal.message
+  core/drupal.progress:
+    - storybook_nsl/drupal.progress
+  clientside_validation_jquery/cv.jquery.validate:
+    - storybook_nsl/jquery.validate
+version: 1.0.0
+project: radix
+datestamp: 1729163927
+generator: 'radix_starterkit:6.0.0-rc6'

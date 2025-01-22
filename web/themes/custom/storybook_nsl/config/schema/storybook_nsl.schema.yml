@@ -1,0 +1,5 @@
+# Schema for the configuration files of the storybook_nsl theme.
+
+storybook_nsl.settings:
+  type: theme_settings
+  label: 'storybook_nsl settings'

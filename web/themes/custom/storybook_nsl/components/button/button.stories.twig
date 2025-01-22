@@ -1,0 +1,33 @@
+{% stories button with { title: 'Components/Button' } %}
+
+  {% story default with {
+    name: 'Default Button test',
+    args: { content: 'Default Button' },
+    argTypes: { content: { control: 'text' } }
+  } %}
+    {% include 'radix:button' with { content } %}
+  {% endstory %}
+
+  {% story primary with {
+    name: 'Button Colors',
+    argTypes: { content: { control: 'text' }, color: { control: 'select', options: ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', 'link'] } },
+    args: { content: 'Primary Button', color: 'primary' },
+    play: "async ({ canvasElement }) => {
+      const canvas = within(canvasElement);
+      const button = canvas.getByRole('button');
+      await userEvent.hover(button);
+      await userEvent.click(button);
+    }"
+  } %}
+    {% include 'radix:button' with { content, color } %}
+  {% endstory %}
+
+  {% story large with {
+    name: 'Button Sizes',
+    argTypes: { content: { control: 'text' }, size: { control: 'select', options: ['btn-sm', 'btn-lg'] }, color: { control: 'select', options: ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'dark', 'light', 'link'] } },
+    args: { content: 'Large Button', size: 'btn-lg', color: 'primary' }
+  } %}
+    {% include 'radix:button' with { content, size } %}
+  {% endstory %}
+
+{% endstories %}

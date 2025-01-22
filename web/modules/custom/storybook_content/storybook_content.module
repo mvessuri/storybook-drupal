@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for storybook_content module.
+ */
+
+ /**
+ * Implements hook_theme().
+ */
+function storybook_content_theme($existing, $type, $theme, $path) {
+  return [
+    'demo_page' => [
+      'variables' => [],
+    ],
+  ];
+}

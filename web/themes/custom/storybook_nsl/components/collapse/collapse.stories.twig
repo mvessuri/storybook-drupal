@@ -1,0 +1,51 @@
+{% stories collapse with {
+  title: 'Components/Collapse',
+  tags: ['autodocs']
+} %}
+
+  {% story default with {
+    name: 'Default Collapse',
+    args: {
+      title: 'Toggle Collapse',
+      button_html_tag: 'button',
+      id: 'collapse-1',
+      collapsed: true,
+      direction: 'vertical',
+      content: 'This is the collapsible content. It can be expanded or collapsed.',
+      collapse_content_utility_classes: ['p-3', 'bg-light']
+    }
+  } %}
+    {% include 'radix:collapse' %}
+  {% endstory %}
+
+  {% story expanded with {
+    name: 'Initially Expanded Collapse',
+    args: {
+      title: 'Toggle Expanded Collapse',
+      button_html_tag: 'button',
+      id: 'collapse-2',
+      collapsed: false,
+      direction: 'vertical',
+      content: 'This content is initially visible. Click the button to collapse it.',
+      collapse_content_utility_classes: ['p-3', 'bg-light']
+    }
+  } %}
+    {% include 'radix:collapse' %}
+  {% endstory %}
+
+  {% story horizontal with {
+    name: 'Horizontal Collapse',
+    args: {
+      title: 'Toggle Horizontal Collapse',
+      button_html_tag: 'button',
+      id: 'collapse-3',
+      collapsed: true,
+      direction: 'horizontal',
+      content: 'This content collapses horizontally.',
+      collapse_content_utility_classes: ['p-3', 'bg-light', 'width-auto']
+    }
+  } %}
+    {% include 'radix:collapse' %}
+  {% endstory %}
+
+{% endstories %}
