@@ -1,0 +1,20 @@
+uuid: 7721f4ad-f3f8-45c0-9e7f-9fe36bb40777
+langcode: en
+status: true
+dependencies:
+  theme:
+    - storybook_nsl
+_core:
+  default_config_hash: yYy2bUJCqCDnykCgbP_OC5hvIOt54C3xIUw07oAPjNQ
+id: storybook_nsl_page_title
+theme: storybook_nsl
+region: header
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: f5771078-f0b4-418e-b8bc-8c9f458dadf0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - storybook_nsl
+_core:
+  default_config_hash: g99o_b_hOLpbEc-O8tDUe-wHmCUvfI8M4hehx4fpJqQ
+id: storybook_nsl_breadcrumbs
+theme: storybook_nsl
+region: header
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

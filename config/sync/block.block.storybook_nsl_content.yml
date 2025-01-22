@@ -1,0 +1,22 @@
+uuid: 39891ed1-0814-4f1d-87ab-deb1feb7acbb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - storybook_nsl
+_core:
+  default_config_hash: YFZCwhDVv65Xz5rZGA_KT9BfOr4C774MEOGpzehkeCs
+id: storybook_nsl_content
+theme: storybook_nsl
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

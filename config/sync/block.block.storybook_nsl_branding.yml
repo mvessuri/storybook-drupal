@@ -1,0 +1,25 @@
+uuid: 831e2a90-553f-4ad2-99e6-a497aff2e426
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - storybook_nsl
+_core:
+  default_config_hash: vK8u3L32rmXYEPrHNl0MnYCEIsKfaQiLnE34oQkNliA
+id: storybook_nsl_branding
+theme: storybook_nsl
+region: navbar_branding
+weight: -1
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

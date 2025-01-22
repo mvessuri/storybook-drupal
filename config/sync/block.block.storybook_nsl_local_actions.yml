@@ -1,0 +1,20 @@
+uuid: 0f6c9688-3d3b-458c-9285-91e4c1c15394
+langcode: en
+status: true
+dependencies:
+  theme:
+    - storybook_nsl
+_core:
+  default_config_hash: rmJLbRzhMDPwVIMAJG8ZAQ41sB8WIdczZ1jE3zhRErE
+id: storybook_nsl_local_actions
+theme: storybook_nsl
+region: header
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

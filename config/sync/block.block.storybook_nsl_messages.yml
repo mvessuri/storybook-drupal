@@ -1,0 +1,22 @@
+uuid: cce312eb-1203-4bd1-be44-5ca21ad6b280
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - storybook_nsl
+_core:
+  default_config_hash: 5w1Nc8GeyO0JFuQe-EOqVFwK3aUGFnB8qcTJAu4AsZo
+id: storybook_nsl_messages
+theme: storybook_nsl
+region: header
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

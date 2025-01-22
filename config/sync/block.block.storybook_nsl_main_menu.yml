@@ -1,0 +1,27 @@
+uuid: 8acea84a-38a7-4d7c-87b4-5ad934221626
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - storybook_nsl
+_core:
+  default_config_hash: PFXEuisRoXFKoEl8wSlYUPy9rXKcxyxP_q9MrDOzaIA
+id: storybook_nsl_main_menu
+theme: storybook_nsl
+region: navbar_left
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }
